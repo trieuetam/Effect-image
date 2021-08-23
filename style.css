@@ -1,0 +1,127 @@
+.effect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.efect-img,
+.efect-img1,
+.efect-img2{
+    width: 100px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    transition: 2s ease;
+    margin: 0 5px;
+    opacity: 1;
+}
+
+.efect-img3{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    transition: 2s ease;
+    margin: 0 5px;
+    opacity: 1;
+}
+
+.efect-img > img,
+.efect-img1 > img,
+.efect-img2 > img,
+.efect-img3 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.efect-img > .remove,
+.efect-img1 > .remove,
+.efect-img2 > .remove,
+.efect-img3 > .remove{
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+}
+.remove > h3{
+    text-align: center;
+    transform: rotate(90deg);
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.efect-img:hover ~ .efect-img1{
+    width: 70px;
+    transition: 2s ease;
+}
+.efect-img1:hover ~ .efect-img2{
+    width: 70px;
+    transition: 2s ease;
+}
+.efect-img2:hover ~ .efect-img3{
+    width: 70px;
+    transition: 2s ease;
+}
+
+
+.efect-img:hover{
+    z-index: 1;
+    width: 400px;
+    transition: 2s ease;
+}
+.efect-img1:hover{
+    z-index: 1;
+    width: 400px;
+    transition: 2s ease;
+}
+.efect-img2:hover{
+    z-index: 1;
+    width: 400px;
+    transition: 2s ease;
+}
+.efect-img3:hover{
+    z-index: 1;
+    width: 400px;
+    transition: 2s ease;
+}
+
+
+
+.efect-img:hover ~ .efect-img1,
+.efect-img:hover ~ .efect-img2,
+.efect-img:hover ~ .efect-img3{
+    opacity: 0.7;
+}
+
+
+.efect-img1:hover ~ .efect-img,
+.efect-img1:hover ~ .efect-img2,
+.efect-img1:hover ~ .efect-img3{
+    opacity: 0.7;
+}
+
+.efect-img2:hover ~ .efect-img,
+.efect-img2:hover ~ .efect-img1,
+.efect-img2:hover ~ .efect-img3{
+    opacity: 0.7;
+}
+
+.efect-img3:hover ~ .efect-img,
+.efect-img3:hover ~ .efect-img1,
+.efect-img3:hover ~ .efect-img2{
+    opacity: 0.7;
+}
+
+.efect-img:hover ~ .efect-img3{
+    width: 100px;
+}
+.efect-img1:hover ~ .efect-img3{
+    width: 100px;
+}
+.efect-img2:hover ~ .efect-img3{
+    width: 100px;
+}
